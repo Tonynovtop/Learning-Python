@@ -5,7 +5,7 @@ def resolve_bag(bag_volume,goods_list): # 传入背包容量、物品清单
     biggest_valid_selection = [] # 最大有效选择
     goods_num = len(goods_list) # 物品数量
     candidate_num = 1 << goods_num # 可选的数量,即所有可能出现的情况总数，2**goods_num
-    for candidate in range(candidate_num): # 循环每种情况
+    for candidate in range(candidate_num): # 循环每种情况，总共16种情况
         selection_decision = [] # 是否选择该物品
         for x in range(goods_num): # 对于每一个物品
             if (candidate & 1) == 1: # 对于1-15

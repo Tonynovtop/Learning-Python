@@ -50,3 +50,5 @@ def func_demo(a,b,c):
 
 d = {"a":10,"b":20,"c":30}
 func_demo(**d)
+e = {"c":30,"a":10,"b":20}
+func_demo(**e)
